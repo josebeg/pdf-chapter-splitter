@@ -390,7 +390,7 @@ const App: React.FC = () => {
             <div className="mt-4 pt-4 border-t border-[#181a1f]">
               <div className="text-[9px] text-[#5c6370] uppercase font-bold mb-2">Node_Metadata</div>
               <div className="grid grid-cols-2 gap-y-1 text-[8px] uppercase tracking-tighter">
-                <span className="text-[#5c6370]">Kernel:</span> <span className="text-[#e5c07b]">OneDark_v2</span>
+                <span className="text-[#5c6370]">Theme:</span> <span className="text-[#e5c07b]">OneDark_v2</span>
                 <span className="text-[#5c6370]">Memory:</span> <span className="text-[#98c379]">OPTIMAL</span>
                 <span className="text-[#5c6370]">IO:</span> <span className="text-[#61afef]">ACTIVE</span>
               </div>
@@ -405,8 +405,6 @@ const App: React.FC = () => {
           <span>{`{ ZERO_SERVER_IO }`}</span>
           <span className="w-1 h-1 bg-[#3e4451] rounded-full"></span>
           <span>{`{ CORE: HEURISTIC_v2 }`}</span>
-          <span className="w-1 h-1 bg-[#3e4451] rounded-full"></span>
-          <span>{`{ LIB: PDF_JS_ENV }`}</span>
         </div>
         <div className="mt-4 text-[#3e4451] text-[8px] italic opacity-50">
           WARNING: UNAUTHORIZED DATA EXTRACTION IS LOGGED BY KERNEL.
