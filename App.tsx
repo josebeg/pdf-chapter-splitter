@@ -123,11 +123,11 @@ const App: React.FC = () => {
       {/* OS Simulation Header */}
       <header className="max-w-5xl w-full mb-8 flex justify-between items-end border-b border-[#3e4451] pb-4">
         <div>
-          <h1 className="text-3xl font-black text-[#E7E7E7] flex items-center gap-3 italic">
+          <h1 className="text-2xl font-black text-[#E7E7E7] flex items-center gap-3">
             <Terminal size={32} />
             PDF SPLITTER v1.0.6
           </h1>
-          <p className="text-[#5c6370] text-sm mt-1">Authorized User: splitter-admin</p>
+          <p className="text-[#5c6370] text-xs mt-1">Authorized User: splitter-admin</p>
         </div>
         <div className="hidden md:block text-right">
           <p className="text-[#98c379] text-xs font-bold uppercase tracking-widest">SYSTEM_STATUS: {status}</p>
