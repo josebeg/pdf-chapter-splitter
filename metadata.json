@@ -1,0 +1,5 @@
+{
+  "name": "PDF Chapter Splitter",
+  "description": "Upload a PDF and intelligently split it into individual files based on chapters or sub-chapters using AI analysis.",
+  "requestFramePermissions": []
+}
