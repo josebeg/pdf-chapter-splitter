@@ -1,62 +1,96 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+  <img width="1200" height="475" alt="PDF Chapter Splitter Banner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+
+  # 📟 PDF Chapter Splitter
+
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![Vite](https://img.shields.io/badge/Vite-6.2.0-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+  [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://reactjs.org/)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+  [![Deployment](https://github.com/josebeg/pdf-chapter-splitter/actions/workflows/deploy.yml/badge.svg)](https://github.com/josebeg/pdf-chapter-splitter/actions/workflows/deploy.yml)
+
+  **A high-performance, terminal-inspired web utility for intelligent PDF segmentation.**
+  
+  [Live Demo](https://josebeg.github.io/pdf-chapter-splitter/) · [Report Bug](https://github.com/josebeg/pdf-chapter-splitter/issues) · [Request Feature](https://github.com/josebeg/pdf-chapter-splitter/issues)
 </div>
 
-# 📟 PDF Chapter Splitter v1.0.6
+---
 
-A powerful, high-performance terminal-simulated web application designed to intelligently segment PDF documents into individual chapters or sections. Built with a focus on privacy, speed, and a sleek developer-centric aesthetic.
+## 📖 Overview
 
-## 🚀 Key Features
+**PDF Chapter Splitter** is a specialized tool designed to break down large PDF documents into manageable chapters. Unlike generic splitters, it uses a **dual-track detection engine** to intelligently identify logical breaks in your documents, providing a seamless workflow from upload to batch export.
 
-- **🧠 Dual-Track Detection Engine**:
-  - **Track A (Bookmarks)**: Automatically extracts structure from internal PDF metadata.
-  - **Track B (Heuristics)**: Uses advanced heuristic rules to detect headings based on font size, positioning, and text patterns.
-- **🎚️ Adjustable Granularity**: Three levels of detection logic—Main chapters, Sub-chapters, or Deep segment analysis.
-- **🛠️ Manual Node Overrides**: Full control to add, rename, or delete detected segments and adjust page ranges before execution.
-- **📦 Batch Export**: Generates and downloads a structured ZIP archive containing all split PDF chapters.
-- **🔒 100% Client-Side**: All binary processing happens locally in your browser. No PDF data ever leaves your machine—**Zero Server IO**.
-- **📺 Cyberpunk UI**: A immersive "OS Simulation" interface featuring the OneDark theme, custom scanline effects, and a live output console.
+The interface is built as an **OS Simulation**, offering a unique developer-focused aesthetic inspired by terminal environments and cyberpunk design.
+
+## ✨ Key Features
+
+- **🧠 Intelligent Detection Engine**:
+  - **Track A (Metadata)**: Leverages internal PDF bookmarks for 1:1 structural fidelity.
+  - **Track B (Heuristics)**: Employs OCR-style heuristic analysis of typography and layout to identify headings when metadata is missing.
+- **🛡️ Privacy First (Zero Server IO)**: 100% of the processing is performed in the client's browser using Web Workers. Your sensitive documents never touch a server.
+- **🎚️ Adaptive Granularity**: Choose between *High-Level*, *Detailed*, or *Deep Scan* modes to control how finely the engine segments your document.
+- **⌨️ Terminal-Driven Experience**: Includes a live logger, simulated boot sequence, and a OneDark color scheme for a premium CLI feel.
+- **� Structured ZIP Export**: Automatically bundles split chapters into a clean, hierarchically named ZIP archive.
 
 ## 🛠️ Technology Stack
 
-- **Framework**: React 19 (TypeScript)
-- **Styling**: Tailwind CSS
-- **PDF Analysis**: [PDF.js](https://mozilla.github.io/pdf.js/)
-- **PDF Manipulation**: [pdf-lib](https://pdf-lib.js.org/)
-- **Compression**: [JSZip](https://stuk.github.io/jszip/)
-- **Build Tool**: Vite
+| Layer | Technology |
+| :--- | :--- |
+| **Frontend** | React 19 + TypeScript |
+| **Styling** | Tailwind CSS (Custom Dark Theme) |
+| **PDF Engine** | Mozilla's PDF.js + pdf-lib |
+| **Archiving** | JSZip |
+| **State** | React Hooks + Terminal Logic Emulation |
 
-## 💻 Local Development
+## � Getting Started
 
-**Prerequisites:** Node.js (v18+)
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18.0.0 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-1. **Clone the repository**:
+### Installation
+
+1. **Clone the Repo**
    ```bash
    git clone https://github.com/josebeg/pdf-chapter-splitter.git
-   cd pdf-chapter-splitter
    ```
-
-2. **Install dependencies**:
+2. **Install Dependencies**
    ```bash
+   cd pdf-chapter-splitter
    npm install
    ```
-
-3. **Run the development server**:
+3. **Launch Development Environment**
    ```bash
    npm run dev
    ```
 
-## 🌐 Deployment to GitHub Pages
+## 🔌 Deployment
 
-The project is pre-configured for automated deployment via GitHub Actions.
+This project is optimized for **GitHub Pages**.
 
-1. Push your changes to the `main` branch.
-2. In your GitHub repository settings, navigate to **Pages**.
-3. Set the **Source** to **GitHub Actions**.
-4. The deployment workflow will trigger automatically and host your app on `<username>.github.io/pdf-chapter-splitter/`.
+1. Fork or Clone this repository.
+2. Ensure GitHub Actions are enabled.
+3. The included `.github/workflows/deploy.yml` will automatically build and deploy the app whenever you push to `main`.
+4. Configure your repository settings under **Pages** to use **GitHub Actions** as the source.
+
+## 🤝 Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📜 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
 <div align="center">
-  <p><i>"Unauthorized data extraction is logged by kernel."</i></p>
+  <sub>Built with ❤️ by <a href="https://github.com/josebeg">Josebeg</a></sub>
+  <br/>
+  <code>SYSTEM_STATUS: OPTIMAL</code>
 </div>
